@@ -16,6 +16,8 @@ function handleFormSubmit(e) {
     const priorityLevel = parseInt(e.target.priority.value)
     
     displayTask(task, priorityLevel)
+
+    e.target.reset()
 }
 
 function displayTask(task, priorityLevel) {
